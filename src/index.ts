@@ -1,4 +1,5 @@
 export * from "./client";
+export * from "./certification";
 export * from "./conformance";
 export * from "./errors";
 export * from "./provider";

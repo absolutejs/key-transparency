@@ -64,6 +64,15 @@ const client = createKeyTransparencyClient({
 The memory view store is for tests and short-lived demos. Production clients need
 durable, rollback-resistant storage.
 
+## Version-bound certification
+
+Provider manifests are claims; certification reports are evidence tied to one
+exact provider version, protocol revision, runtime, completion time, scenario
+set, and evidence digest. Production admission should require fresh conformance
+and adversarial claims. Official vectors, cross-implementation behavior, and an
+independent audit are separate claims and cannot be declared without their
+corresponding evidence.
+
 ## Standards status
 
 The package currently pins
